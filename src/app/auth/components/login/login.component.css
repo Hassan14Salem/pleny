@@ -1,0 +1,85 @@
+.login-section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1
+{
+font-family: Inter;
+font-size: 30px;
+font-weight: 600;
+line-height: 38px;
+text-align: center;
+
+}
+span
+{
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #667085;
+}
+label
+{
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+
+}
+.log-text
+{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.img-logo
+{
+    width: 100%;
+}
+.login-fields
+{
+    width: 30%;
+
+}
+.logoimg
+{
+    max-width: 100%;
+    height: auto;
+}
+.form-control
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 8px ;
+    border: 1px solid #D0D5DD;
+    margin: 10px 0px;
+    gap: 8px;
+
+
+}
+.sub-btn
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none ;
+    margin: 10px 0px;
+background-color: rgb(17, 214, 214);
+color: black;
+cursor: pointer;
+}

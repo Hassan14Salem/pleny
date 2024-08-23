@@ -1,0 +1,158 @@
+.container
+{
+    display: flex;
+}
+
+.filters
+{
+   width: 20% !important;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+
+}
+.options{
+    width: 100% !important ;
+    height: 100%;
+}
+.options input 
+{
+    margin: 10px 10px;
+}
+h2
+{
+    margin-bottom:20px ;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.product-container
+{
+    width:25%!important;
+    margin: 0px 20px 20px 20px;
+    height: auto;
+
+}
+.product
+{
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.col-lg-3
+{
+    width: 25% !important;
+}
+.label-input
+{
+    margin: 0px 5px;
+}
+.ul-numbers
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:20px 0px ;
+}
+.ul-numbers li
+{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    
+}
+.btn-add
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #41CCCC;
+    margin: 10px 0px;
+}
+.product-image
+{
+    max-width: 100% !important;
+}
+.desc
+{
+    display: block;
+    max-height: 75px !important;
+    overflow: hidden;              
+    text-overflow: ellipsis;       
+    white-space: nowrap;  
+}
+.active
+{
+    background-color: #41CCCC;
+    display: flex;
+    justify-content: center;
+    border-radius: 1px;
+}
+a
+{
+    text-decoration: none;
+    cursor:  pointer;
+}
+.productNum
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    border: 1px solid #41CCCC;
+}
+.addToCart
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.successMsg
+{
+    width: 100%;
+    background-color: rgb(39, 160, 39);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+
+
+@media screen and (min-width : 668px) and (max-width:991px) {
+    
+   
+    .filters
+    {
+        width: 30% !important;
+    }
+    .row
+    {
+        width: 70% !important;
+    }
+    .product-container
+    {
+        width: 40% !important;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:668px) {
+    
+   
+    .filters
+    {
+        width: 45% !important;
+    }
+    .row
+    {
+        width: 50% !important;
+    }
+    .product-container
+    {
+        width: 100% !important;
+    }
+}

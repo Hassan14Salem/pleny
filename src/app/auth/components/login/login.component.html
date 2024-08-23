@@ -1,0 +1,41 @@
+<section class="login-section">
+    <div class="login-container">
+   <div class="log-text">
+     <div class="img-logo">
+         <img src="assets/images/logo/images.png" style="width: 32px; height: 32px;" alt="logo" class="logoimg">
+     </div>
+     <div>
+         <h1>Login To Your Account</h1>
+         <span>Welcome Back! Please enter Your Details</span>
+     </div>
+   </div>
+ 
+     <div class="login-fields">
+      <form [formGroup]="loginForm" (ngSubmit)="isAuth()">
+             <div>
+                 <label for="email">Email</label>
+                 <div>
+                 <input type="email" id="email" class="form-control" formControlName="email">
+ 
+ 
+              
+                 </div>
+             </div>
+             <div>
+                 <label for="password">Password</label>
+                 <div>
+                 <input type="password" id="password" class="form-control" formControlName="password">
+ 
+                 </div>
+             </div>
+ 
+             <div>
+                 <button type="submit"  class="sub-btn">Sign in</button>
+             </div>
+      </form>
+     </div>
+    </div>
+ 
+ </section>
+ 
+ 

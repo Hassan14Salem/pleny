@@ -1,0 +1,26 @@
+
+section
+{
+    text-align: center;
+}
+.imgContainer
+{
+    margin: 0px 0.75rem !important;
+}
+h1
+{
+    font-size: 2.5rem;
+    padding: 20px 0px;
+}
+.errorimg
+{
+    max-width: 100%;
+    height: auto;
+}
+p
+{
+    letter-spacing: 0.3px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  
+}

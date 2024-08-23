@@ -1,0 +1,32 @@
+<nav>
+    <div class="nav-container">
+        <div class="logo" *ngIf="isLoggin">
+            <img src="assets/images/logo/images.png" style="width: 32px; height: 32px;" alt="logo" class="logoimg">
+            <ul class="ul-nav">
+                <li>
+                    <a routerLink="/Home/products" >Home</a>
+                </li>
+                <li>
+                    <a routerLink="/Home/testssssssssssssssss" >test</a>
+                </li>
+            </ul>
+        </div>
+        <div class="login-btn">
+            <ul class="ul-nav">
+                <li *ngIf="!isLoggin">
+                    <a routerLink="/Auth/login" >Login</a>
+                    
+                </li>
+                <li class="cart" *ngIf="isLoggin">
+                    <a   (click)="logout()" *ngIf="isLoggin">cart</a>
+                    <span class="num">{{this._productService.cartNum}}</span>
+
+                </li>
+                <li *ngIf="isLoggin">
+                    <a   (click)="logout()" >log out</a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+</nav>

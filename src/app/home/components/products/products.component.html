@@ -1,0 +1,190 @@
+
+
+<section>
+    <div class="container">
+        <div class="filters">
+            <div class="options">
+                <div>
+                    <div>
+                        <h2>Products</h2>
+                        <form >
+                            <div>
+                                <input name="category" type="radio" value="All" id="All" class="label-input" (change)="onSubmit($event)">
+                                <label for="All">All </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="smartphones" id="Smartphones" class="label-input" (change)="onSubmit($event)">
+                                <label for="Smartphones">Smartphones </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="laptop" id="Laptop" class="label-input" (change)="onSubmit($event)">
+                                <label for="Laptop">Laptop </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="fragrances" id="Fragrances" class="label-input" (change)="onSubmit($event)">
+                                <label for="Fragrances">Fragrances </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="skincare" id="Skincare" class="label-input" (change)="onSubmit($event)">
+                                <label for="Skincare">Skincare  </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="groceries" id="Groceries" class="label-input" (change)="onSubmit($event)">
+                                <label for="Groceries">Groceries </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="homeDecoration" id="HomeDecoration" class="label-input" (change)="onSubmit($event)">
+                                <label for="HomeDecoration">Home Decoration  </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="furniture" id="furniture" class="label-input" (change)="onSubmit($event)">
+                                <label for="furniture">furniture </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="tops" id="tops" class="label-input" (change)="onSubmit($event)">
+                                <label for="tops">Tops </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="women's dressers" id="women'sdressers" class="label-input" (change)="onSubmit($event)">
+                                <label for="women'sdressers">women's dressers </label>
+                            </div> 
+                               <div>
+                                <input name="category" type="radio" value="women's shoes" id="women's shoes" class="label-input" (change)="onSubmit($event)">
+                                <label for="women's shoes">women's shoes </label>
+                            </div>
+                            <div>
+                                <input name="category" type="radio" value="men'sshirts" id="men'sshirts" class="label-input" (change)="onSubmit($event)">
+                                <label for="men'sshirts">men's shirts </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="men'sshoes" id="men'sshoes" class="label-input" (change)="onSubmit($event)">
+                                <label for="men'sshoes">men's shoes </label>
+                            </div>
+    
+                           
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="men'swatches" id="men'swatches" class="label-input" (change)="onSubmit($event)">
+                                <label for="men'swatches">men's watches </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="women'swatches" id="women'swatches" class="label-input" (change)="onSubmit($event)">
+                                <label for="women'swatches">women's watches </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="women'sbags" id="women'sbags" class="label-input" (change)="onSubmit($event)">
+                                <label for="women'sbags">women's bags </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="women'sjewellery" id="women'sjewellery" class="label-input" (change)="onSubmit($event)">
+                                <label for="women'sjewellery">women's jewellery </label>
+                            </div>
+    
+    
+                            <div>
+                                <input name="category" type="radio" value="sunglassess" id="sunglassess" class="label-input" (change)="onSubmit($event)">
+                                <label for="sunglassess">sunglassess </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="automotive" id="automotive" class="label-input" (change)="onSubmit($event)">
+                                <label for="automotive">automotive </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="motorcycle" id="motorcycle" class="label-input" (change)="onSubmit($event)">
+                                <label for="motorcycle">motorcycle </label>
+                            </div>
+    
+                            <div>
+                                <input name="category" type="radio" value="lighting" id="lighting" class="label-input" (change)="onSubmit($event)">
+                                <label for="lighting">lighting </label>
+                            </div>
+                        </form>
+                        
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+              
+                <div class="product-container" *ngFor="let product of products ; let i = index">
+                    <div class="product">
+                        <div>
+                            <img src="{{product.thumbnail}}" class="product-image" alt="product image">
+                            <h4>{{product.title}} </h4>
+                            <span class="desc">{{product.description}}</span>
+    
+                            <div>
+                                <span>{{product.price}} </span>
+    
+                            </div>
+    
+                            <div>
+                                <h6>brand : {{product.brand}}</h6>
+                                <h6>category : {{product.category}}</h6>
+                                <h6>in stock : {{product.stock}}</h6>
+    
+    
+                            </div>
+    
+                            <div>
+                                <h6>{{product.rating}}</h6>
+                            </div>
+                        </div>
+                        <button style="cursor: pointer;" class="btn-add" (click)="showQuantity(i)" *ngIf="!productFlags[i]">Add</button>
+                        <div *ngIf="productFlags[i] && !success[i]" class="addToCart">
+                            <input type="number"  class="productNum" min="1" value="1" (change)="getQuantity($event)">
+                            <button style="cursor: pointer;" class="btn-add" (click)="addToCart(product,i)" >Add To Cart</button>
+                        </div>
+                        <div class="successMsg" *ngIf="success[i]">
+                            <p>Product Added SuccessFully!</p>
+                        </div>
+               
+                    </div>
+                </div>
+             
+                
+        </div>
+    </div>
+
+
+    <ul class="ul-numbers">
+        <span style="cursor: pointer;">
+             < 
+        
+        </span>
+        <li id="paginate" class="active" *ngFor="let x of numbers ; let i = index" [ngClass]="{'active': (i + 1) === activePage}">
+            <a  (click)="getSkipNum(i+1)">
+                {{i+1}}
+            </a>
+        </li>
+        <span style="cursor: pointer;">
+        >
+
+        </span>
+    </ul>
+</section>
